@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <main>
+      <section class="layout">
+        <h1 class="mint">Unit Converter..</h1>
+        <br />
+        <nav>
+          <ul>
+            <li><button class="button-menu" role="button" onclick="showDropdown('length')">Length</button></li>
+            <li><button class="button-menu" role="button" onclick="showDropdown('temp')">Temperature</button></li>
+            <li><button class="button-menu" role="button" onclick="showDropdown('area')">Area</button></li>
+            <li><button class="button-menu" role="button" onclick="showDropdown('time')">Time</button></li>
+            <li><button class="button-menu" role="button" onclick="showDropdown('weight')">Weight</button></li>
+            <li><button class="button-menu" role="button" onclick="showDropdown('volume')">Volume</button></li>
+          </ul>
+        </nav>
+        <div id="converter">
+          <input type="number" id="inputValue" placeholder="Enter value" />
+          <select name="inputUnit" id="inputUnit"></select>
+          <select name="outputUnit" id="outputUnit"></select>
+          
+          <button class="button" role="button" onclick="convert()">Convert</button>
+          
+          <div class="result"><p id="result"></p></div>
+        </div>
+      </section>
+    </main>
+      <footer>
+        2023 Shantanu Shaw. All rights reserved
+      </footer>
+      <script src="script_conversiontable_list.js"></script>
+      <script src="conversion_calculation.js"></script>
+  </body>
+</html>
