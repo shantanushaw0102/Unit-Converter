@@ -1,4 +1,4 @@
-function showDropdown(type) 
+function showDropdown(type) {
     const inputDropdown = document.getElementById('inputUnit');
     const outputDropdown = document.getElementById('outputUnit');
     
